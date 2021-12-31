@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:rippleColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--name  start here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/Tv_Photo_Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:text="Photo Title" />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--name and date newsfeed start here-->
+
+            <!--imagesOnNews_feed start here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/IMG_Photo_Library"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"
+                     />
+
+            </LinearLayout>
+            <!--imagesOnNews_feed end here-->
+
+
+            <!--Description newsfeed start here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/TV_description_photoLibrary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="Description"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--Description newsfeed start here-->
+
+            <!--comments icon, like icon newsfeed start here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                  >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/IMG_handLike"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/handlike"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/TV_TextLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="Like"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dp"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/IMG_LoveLike"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/heartlike"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/TV_LoveText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="Heart"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dp"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/IMG_Share"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_share"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="Share"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--comments icon, like icon  start here-->
+
+
+            <!--rating start here-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="-50dp">
+
+                        <RatingBar
+                            android:id="@+id/Rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="2.5"
+                            android:numStars="5"
+                            android:scaleX="0.4"
+                            android:scaleY="0.4"
+
+                           />
+
+
+                    </LinearLayout>
+                    <!--rating  ends here-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.core.widget.NestedScrollView>
